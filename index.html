@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" type="imagem/png" href="icons/Logo Vibes.png"/>
+    <script src="joginho_teste.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Vibe</title>
+    <link rel="stylesheet" href="CSSa/estilo.css">
+</head>
+
+<body onload="musica_nova()">
+    <div class="container">
+        <header>       
+            <div onclick="volta_tudo()" class="row justify-content-center align-middle border-bottom border-secondary">
+                <img id="img" src="img/vibe.png">
+            </div>          
+        </header>
+
+        <!-- Botao de play -->
+        <div id="play_pause" class="row justify-content-center align-middle" style="padding-top: 20px;">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <button id="botao">    
+                    <img class="img-fluid" onclick="Play()" id="Play" src="img/play vibe.png" alt="Bootstrap">
+                    <img class="img-fluid" style="display: none;" onclick="Pause()" id="Pause" src="img/pause vibe.png" alt="Bootstrap">
+                </button>
+                <div>
+                    <audio class="musica" src="musica/Ana Castela Melody e DJ Chris no Beat  Pipoco  Karaokê.mp3"></audio>
+                    <audio class="musica" src="musica/ESTÚPIDO-CUPIDO-CELLY-CAMPELLO-PLAYBACK-ORIGINAL-1959.mp3"></audio>
+                    <audio class="musica" src="musica/Exagerado Cazuza  Karaokê Mania.mp3"></audio>
+                    <audio class="musica" src="musica/Ginga  Iza part Rincon Sapiência karaoKê.mp3"></audio>
+                    <audio class="musica" src="musica/João e Maria.mp3"></audio>
+                    <audio class="musica" src="musica/karaoke  Garota de Ipanema.mp3"></audio>
+                    <audio class="musica" src="musica/Largado Às Traças  Zé Neto e Cristiano.mp3"></audio>
+                    <audio class="musica" src="musica/MULHER DE FASES.mp3"></audio>
+                    <audio class="musica" src="musica/Olha A Onda  Tchaka Bum.mp3"></audio>
+                    <audio class="musica" src="musica/Pelados em Santos  Mamonas Assassinas.mp3"></audio>
+                    <audio class="musica" src="musica/Show Das Poderosas Instrumental  Anitta.mp3"></audio>
+                    <audio class="musica" src="musica/Tim Maia  Gostava tanto de você Karaokê.mp3"></audio>
+                </div>
+            </div>
+            <div class="col-4"></div>
+        </div>
+        
+        <!-- Lista das Salas -->
+        <div id="opcoes" class="row justify-content-center" style="padding-top: 20px; margin: 0px;">
+            <div class="col-3">
+                <button class="button_opcao"></button>
+            </div>
+            <div class="col-3">
+                <button class="button_opcao"></button>
+            </div>
+            <div class="col-3">
+                <button class="button_opcao"></button>
+            </div>
+            <div class="col-3">
+                <button class="button_opcao"></button>
+            </div>
+        </div>
+        
+        <!-- Lista -->
+        <div class="row justify-content-center align-middle" style="padding-top: 20px;">
+            <div class="col-auto">
+                <ul id='list'>
+                    <li class="music">Pipoco</li>
+                    <li class="music">Estúpido Cupido</li>
+                    <li class="music">Exagerado</li>
+                    <li class="music">Ginga</li> 
+                    <li class="music">João e Maria</li>
+                    <li class="music">Garota de Ipanema</li>
+                    <li class="music">Largado as Traças</li>
+                    <li class="music">Mulher de Fases</li>
+                    <li class="music">Olha a Onda</li>
+                    <li class="music">Pelados em Santos</li>
+                    <li class="music">Show das Poderosas</li>
+                    <li class="music">Gostava Tanto de Você</li>
+                </ul>
+            </div>
+        </div>
+
+	    <!-- Resultado -->
+	    <div id="campo_resultado" class="row justify-content-center" style="padding-top: 20px; margin: 0px; display: none;">
+            <div id="col-3"></div>
+            <div class="col-6">
+                <button id="resultado"></button>
+            </div>
+            <div id="col-3"></div>
+        </div>
+    </div>
+</body>
+</html>
